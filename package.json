@@ -1,0 +1,11 @@
+{
+  "name": "packer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hufeng/packer.git",
+  "author": "hufeng <hufeng@qianmi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.22"
+  }
+}

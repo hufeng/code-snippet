@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "target": "es2015",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build"
+  }
+}
