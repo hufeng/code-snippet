@@ -1,0 +1,126 @@
+{
+  "log": {
+    "prefix": "log",
+    "body": "console.log($0);",
+    "description": "log something"
+  },
+
+  "NODE_ENV": {
+    "prefix": "NODE_ENV",
+    "body": "process.env.NODE_ENV",
+    "description": "get node env variable"
+  },
+
+  "import": {
+    "prefix": "import",
+    "body": "import $0 from '$1'",
+    "description": "import something."
+  },
+
+  "export default function": {
+    "prefix": "edf",
+    "body": "export default function ${1:name}(${2:props}) {$0}",
+    "description": "create export default function"
+  },
+
+  "export function": {
+    "prefix": "ef",
+    "body": "export function ${1:name}(${2:props}) {$0}",
+    "description": "create export function"
+  },
+
+  "export const function": {
+    "prefix": "ecf",
+    "body": "export const ${1:name} = (${2:props}) => {$0}",
+    "description": "create export const arrow function"
+  },
+
+  "export default class": {
+    "prefix": "edc",
+    "body": "export default class ${1:ClassName} {$0}",
+    "description": "create export default class"
+  },
+
+  "react|>import React": {
+    "prefix": "react",
+    "body": ["import React from 'react';$0"],
+    "description": "import React from current module"
+  },
+
+  "react|>export default React class": {
+    "prefix": "edr",
+    "body": "export default class ${1:ClassName} extends React.Component {$0}",
+    "description": "export default react class"
+  },
+
+  "react|>const styles": {
+    "prefix": "cs",
+    "body": "const styles = StyleSheet.create({${1:container}: {$0})",
+    "description": "const styles"
+  },
+
+  "react|>setState": {
+    "prefix": "ss",
+    "body": "this.setState({$1: $0})",
+    "description": "React setState"
+  },
+
+  "react|>setState function": {
+    "prefix": "ssf",
+    "body": "this.setState(state => {$)})",
+    "description": "set state funcion"
+  },
+
+  "react|>componentDidMount": {
+    "prefix": "cdm",
+    "body": "componentDidMount() {$0}",
+    "description": "react lifecycle componentDidMount"
+  },
+
+  "react|>componentDidUpdate": {
+    "prefix": "cdu",
+    "body": "componentDidUpdate() {$0}",
+    "description": "react lifecycle componentDidUpdate"
+  },
+
+  "react|>shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": "shouldComponentUpdate(nextProps, nextState) {$0}",
+    "description": "react lifecycle shouldComponentUpdate"
+  },
+
+  "react|>componentWillReceiveProps": {
+    "prefix": "cwrp",
+    "body": "componentWillReceiveProps(nextProps) {$0}",
+    "description": "react lifecycle componentWillReceiveProps"
+  },
+
+  "iflux|>useRelax": {
+    "prefix": "useRelax",
+    "body": "const {} = useRelax([])",
+    "description": "iflux useRelax"
+  },
+
+  "iflux|>relaxClass": {
+    "prefix": "relax",
+    "body": [
+      "@Relax([$2])",
+      "class ${1: Relax} extends React.Component {",
+      "relaxProps = {};",
+      "render() {",
+      "const {$3} = this.relaxProps;",
+      "return (<div>${0}</div>)",
+      "}",
+      "}"
+    ]
+  },
+
+  "iflux|>action": {
+    "prefix": "action",
+    "body": [
+      "const ${name: 1} = action(${2}, (store: Store) => {",
+      "${0}",
+      "})"
+    ]
+  }
+}

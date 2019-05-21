@@ -1,11 +1,38 @@
 {
-  "name": "packer",
+  "name": "hufeng-snippet",
+  "description": "hufeng's snippet for vscode",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/hufeng/packer.git",
-  "author": "hufeng <hufeng@qianmi.com>",
+  "displayName": "艾米爸爸snippets",
+  "publisher": "hufeng",
+  "icon": "img/head.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
   "license": "MIT",
-  "dependencies": {
-    "@types/node": "^8.0.22"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hufeng/code-snippet.git"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.json"
+      }
+    ]
   }
 }
